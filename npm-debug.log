@@ -56,19 +56,58 @@
 28 silly publish      'grunt-contrib-nodeunit': '^0.4.1',
 28 silly publish      'grunt-contrib-watch': '^0.6.1',
 28 silly publish      'grunt-jsbeautifier': '^0.2.8',
-28 silly publish      'grunt-jscs': '^1.5.0' },
+28 silly publish      'grunt-jscs': '^1.5.0',
+28 silly publish      sinon: '^1.12.2' },
+28 silly publish   dependencies: { lodash: '^3.3.0' },
 28 silly publish   readme: '# lodashim\nLodash Improved with some util functions\n',
 28 silly publish   readmeFilename: 'README.md',
-28 silly publish   gitHead: '351af0e999353c0d6be8aec694876e277e86eb77',
+28 silly publish   gitHead: '3f4ce761019571c572feb8845be125079024093b',
 28 silly publish   _id: 'lodashim@1.0.0',
-28 silly publish   _shasum: '37612d0b8b2cea3e256e34cb4c65d6a2abf6be60',
+28 silly publish   _shasum: '8495598f7d2e39e2c79a6df22787b1bf45ef7929',
 28 silly publish   _from: '.' }
-29 error need auth auth and email required for publishing
-29 error need auth You need to authorize this machine using `npm adduser`
-30 error System Darwin 14.0.0
-31 error command "node" "/usr/local/bin/npm" "publish"
-32 error cwd /Users/henrimichel/git/lodashim
-33 error node -v v0.10.32
-34 error npm -v 1.4.28
-35 error code ENEEDAUTH
-36 verbose exit [ 1, true ]
+29 verbose request where is /lodashim
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 6ee6b444d780c3b1
+32 verbose url raw /lodashim
+33 verbose url resolving [ 'https://registry.npmjs.org/', './lodashim' ]
+34 verbose url resolved https://registry.npmjs.org/lodashim
+35 verbose request where is https://registry.npmjs.org/lodashim
+36 info trying registry request attempt 1 at 23:11:08
+37 http PUT https://registry.npmjs.org/lodashim
+38 http 403 https://registry.npmjs.org/lodashim
+39 verbose headers { date: 'Sat, 21 Feb 2015 02:11:10 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '2757',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-iad2121-IAD',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1424484670.319017,VS0,VE330',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 1.0.0
+41 error old={"name":"lodashim","version":"1.0.0","description":"Lodash improved with some util functions","main":"lodashim.js","directories":{"test":"test"},"scripts":{"test":"grunt"},"repository":{"type":"git","url":"https://github.com/henricavalcante/lodashim.git"},"keywords":["lodash","improved","lodashim","util","functions"],"author":{"name":"Henri Cavalcante"},"license":"ISC","bugs":{"url":"https://github.com/henricavalcante/lodashim/issues"},"homepage":"https://github.com/henricavalcante/lodashim","devDependencies":{"grunt-contrib-jshint":"^0.11.0","grunt-contrib-nodeunit":"^0.4.1","grunt-contrib-watch":"^0.6.1","grunt-jsbeautifier":"^0.2.8","grunt-jscs":"^1.5.0"},"gitHead":"351af0e999353c0d6be8aec694876e277e86eb77","_id":"lodashim@1.0.0","_shasum":"37612d0b8b2cea3e256e34cb4c65d6a2abf6be60","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"henricavalcante","email":"hnri_mxel@hotmail.com"},"maintainers":[{"name":"henricavalcante","email":"hnri_mxel@hotmail.com"}],"dist":{"shasum":"37612d0b8b2cea3e256e34cb4c65d6a2abf6be60","tarball":"http://registry.npmjs.org/lodashim/-/lodashim-1.0.0.tgz"}}
+41 error new={"name":"lodashim","version":"1.0.0","description":"Lodash improved with some util functions","main":"lodashim.js","directories":{"test":"test"},"scripts":{"test":"grunt"},"repository":{"type":"git","url":"https://github.com/henricavalcante/lodashim.git"},"keywords":["lodash","improved","lodashim","util","functions"],"author":{"name":"Henri Cavalcante"},"license":"ISC","bugs":{"url":"https://github.com/henricavalcante/lodashim/issues"},"homepage":"https://github.com/henricavalcante/lodashim","devDependencies":{"grunt-contrib-jshint":"^0.11.0","grunt-contrib-nodeunit":"^0.4.1","grunt-contrib-watch":"^0.6.1","grunt-jsbeautifier":"^0.2.8","grunt-jscs":"^1.5.0","sinon":"^1.12.2"},"dependencies":{"lodash":"^3.3.0"},"readme":"# lodashim\u000aLodash Improved with some util functions\u000a","readmeFilename":"README.md","gitHead":"3f4ce761019571c572feb8845be125079024093b","_id":"lodashim@1.0.0","_shasum":"8495598f7d2e39e2c79a6df22787b1bf45ef7929","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"henricavalcante","email":"hnri_mxel@hotmail.com"},"maintainers":[{"name":"henricavalcante","email":"hnri_mxel@hotmail.com"}],"dist":{"shasum":"8495598f7d2e39e2c79a6df22787b1bf45ef7929","tarball":"http://registry.npmjs.org/lodashim/-/lodashim-1.0.0.tgz"}}: lodashim
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 14.0.0
+44 error command "node" "/usr/local/bin/npm" "publish"
+45 error cwd /Users/henrimichel/git/lodashim
+46 error node -v v0.10.32
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]

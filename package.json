@@ -1,6 +1,6 @@
 {
   "name": "lodashim",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lodash improved with some util functions",
   "main": "lodashim.js",
   "directories": {
