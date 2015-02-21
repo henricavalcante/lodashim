@@ -62,4 +62,24 @@ exports["lodashim"] = {
 
     test.done();
   },
+
+  extend: function(test) {
+    test.expect(1);
+
+    var a = {},
+      b = {};
+
+    a.fn1 = function () {
+      return 1;
+    };
+
+    b.fn2 = function () {
+      return 2;
+    };
+
+    lodashim.extend(a,b);
+    test.equal(a.fn2(), 2);
+
+    test.done();
+  }
 };

@@ -31,6 +31,10 @@
     "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jsbeautifier": "^0.2.8",
-    "grunt-jscs": "^1.5.0"
+    "grunt-jscs": "^1.5.0",
+    "sinon": "^1.12.2"
+  },
+  "dependencies": {
+    "lodash": "^3.3.0"
   }
 }

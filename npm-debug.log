@@ -1,17 +1,74 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'test' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 error Error: ENOENT, open '/Users/henrimichel/git/lodashim/package.json'
-5 error If you need help, you may report this *entire* log,
-5 error including the npm and node versions, at:
-5 error     <http://github.com/npm/npm/issues>
-6 error System Darwin 14.0.0
-7 error command "node" "/usr/local/bin/npm" "test"
-8 error cwd /Users/henrimichel/git/lodashim
-9 error node -v v0.10.32
-10 error npm -v 1.4.28
-11 error path /Users/henrimichel/git/lodashim/package.json
-12 error code ENOENT
-13 error errno 34
-14 verbose exit [ 34, true ]
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/henrimichel/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/henrimichel/.npm/lodashim/1.0.0/package.tgz', '.' ]
+11 verbose tarball /Users/henrimichel/.npm/lodashim/1.0.0/package.tgz
+12 verbose folder .
+13 info prepublish lodashim@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/henrimichel/.npm/1f1177db-tar.lock
+16 silly lockFile cc06ed06-l-npm-lodashim-1-0-0-package-tgz tar:///Users/henrimichel/.npm/lodashim/1.0.0/package.tgz
+17 verbose lock tar:///Users/henrimichel/.npm/lodashim/1.0.0/package.tgz /Users/henrimichel/.npm/cc06ed06-l-npm-lodashim-1-0-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile cc06ed06-l-npm-lodashim-1-0-0-package-tgz tar:///Users/henrimichel/.npm/lodashim/1.0.0/package.tgz
+21 silly lockFile cc06ed06-l-npm-lodashim-1-0-0-package-tgz tar:///Users/henrimichel/.npm/lodashim/1.0.0/package.tgz
+22 silly lockFile 0370b400-ichel-npm-lodashim-1-0-0-package /Users/henrimichel/.npm/lodashim/1.0.0/package
+23 verbose lock /Users/henrimichel/.npm/lodashim/1.0.0/package /Users/henrimichel/.npm/0370b400-ichel-npm-lodashim-1-0-0-package.lock
+24 silly lockFile 0370b400-ichel-npm-lodashim-1-0-0-package /Users/henrimichel/.npm/lodashim/1.0.0/package
+25 silly lockFile 0370b400-ichel-npm-lodashim-1-0-0-package /Users/henrimichel/.npm/lodashim/1.0.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'lodashim',
+28 silly publish   version: '1.0.0',
+28 silly publish   description: 'Lodash improved with some util functions',
+28 silly publish   main: 'lodashim.js',
+28 silly publish   directories: { test: 'test' },
+28 silly publish   scripts: { test: 'grunt' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/henricavalcante/lodashim.git' },
+28 silly publish   keywords: [ 'lodash', 'improved', 'lodashim', 'util', 'functions' ],
+28 silly publish   author: { name: 'Henri Cavalcante' },
+28 silly publish   license: 'ISC',
+28 silly publish   bugs: { url: 'https://github.com/henricavalcante/lodashim/issues' },
+28 silly publish   homepage: 'https://github.com/henricavalcante/lodashim',
+28 silly publish   devDependencies:
+28 silly publish    { 'grunt-contrib-jshint': '^0.11.0',
+28 silly publish      'grunt-contrib-nodeunit': '^0.4.1',
+28 silly publish      'grunt-contrib-watch': '^0.6.1',
+28 silly publish      'grunt-jsbeautifier': '^0.2.8',
+28 silly publish      'grunt-jscs': '^1.5.0' },
+28 silly publish   readme: '# lodashim\nLodash Improved with some util functions\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '351af0e999353c0d6be8aec694876e277e86eb77',
+28 silly publish   _id: 'lodashim@1.0.0',
+28 silly publish   _shasum: '37612d0b8b2cea3e256e34cb4c65d6a2abf6be60',
+28 silly publish   _from: '.' }
+29 error need auth auth and email required for publishing
+29 error need auth You need to authorize this machine using `npm adduser`
+30 error System Darwin 14.0.0
+31 error command "node" "/usr/local/bin/npm" "publish"
+32 error cwd /Users/henrimichel/git/lodashim
+33 error node -v v0.10.32
+34 error npm -v 1.4.28
+35 error code ENEEDAUTH
+36 verbose exit [ 1, true ]
