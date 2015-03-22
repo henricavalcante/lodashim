@@ -63,6 +63,15 @@ exports["lodashim"] = {
     test.done();
   },
 
+  randomize: function(test) {
+    test.expect(1);
+
+    var a = [1,2,3,4,5,6,7,8,9,0],
+      b = lodashim.clone(a);
+    test.notEqual(lodashim.randomize(a), b);
+    test.done();
+  },
+
   extend: function(test) {
     test.expect(1);
 

@@ -38,5 +38,15 @@ lodash.sum = function sum(values) {
   }, 0);
 };
 
+// randomize()
+// 
+// Returns the randomized array
+//
+lodash.randomize = function randomize(array) {
+  array.sort(function() {
+    return 0.5 - Math.random();
+  });
+  return array;
+};
 
 module.exports = lodash;
